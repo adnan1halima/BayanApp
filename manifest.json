@@ -1,0 +1,26 @@
+{
+  "id": "./index.html",
+  "name": "بيان — مساعد القراءة لذوي الديسلكسيا",
+  "short_name": "بيان",
+  "description": "تطبيق يساعد ذوي الديسلكسيا وصعوبات التعلم: قارئ ذكي، ألعاب إدراكية، فحص أولي، وخطة تدريب يومية.",
+  "lang": "ar",
+  "dir": "rtl",
+  "start_url": "./index.html?source=pwa",
+  "scope": "./",
+  "display": "standalone",
+  "display_override": ["standalone", "minimal-ui"],
+  "background_color": "#0A1128",
+  "theme_color": "#0A1128",
+  "categories": ["education", "productivity"],
+  "icons": [
+    { "src": "icons/icon-192.png", "sizes": "192x192", "type": "image/png", "purpose": "any" },
+    { "src": "icons/icon-512.png", "sizes": "512x512", "type": "image/png", "purpose": "any" },
+    { "src": "icons/maskable-192.png", "sizes": "192x192", "type": "image/png", "purpose": "maskable" },
+    { "src": "icons/maskable-512.png", "sizes": "512x512", "type": "image/png", "purpose": "maskable" }
+  ],
+  "shortcuts": [
+    { "name": "القارئ الذكي", "short_name": "القارئ", "url": "./index.html#/reader", "icons": [{ "src": "icons/icon-192.png", "sizes": "192x192", "type": "image/png" }] },
+    { "name": "جلسة اليوم", "short_name": "الخطة", "url": "./index.html#/therapy", "icons": [{ "src": "icons/icon-192.png", "sizes": "192x192", "type": "image/png" }] },
+    { "name": "الألعاب الإدراكية", "short_name": "الألعاب", "url": "./index.html#/games", "icons": [{ "src": "icons/icon-192.png", "sizes": "192x192", "type": "image/png" }] }
+  ]
+}
