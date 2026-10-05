@@ -3269,6 +3269,9 @@
       body.is-loading { overflow: auto; }
     </style>
   </noscript>
+  <link rel="manifest" href="manifest.json">
+<link rel="icon" type="image/png" sizes="32x32" href="favicon-32.png">
+<link rel="apple-touch-icon" href="apple-touch-icon.png">
 </head>
 
 <body class="is-loading">
@@ -9075,5 +9078,13 @@
       skipButton.addEventListener('click', hideSplash);
     })();
   </script>
+  <script>
+  if ('serviceWorker' in navigator) {
+    window.addEventListener('load', function () {
+      navigator.serviceWorker.register('./sw.js')
+        .catch(function (e) { console.warn('[SW] register failed', e); });
+    });
+  }
+</script>
 </body>
 </html>
